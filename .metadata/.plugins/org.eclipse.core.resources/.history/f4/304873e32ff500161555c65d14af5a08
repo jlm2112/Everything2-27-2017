@@ -1,0 +1,19 @@
+import java.util.List;
+
+public class RentalStatement {
+
+	private List<Rental> myList = new ArrayList();
+	
+	public RentalStatement() {
+
+	}
+	
+	public void add(Rental toAdd) {
+		 myList.add(toAdd);
+	}
+	
+	public void print() {
+		
+	}
+
+}

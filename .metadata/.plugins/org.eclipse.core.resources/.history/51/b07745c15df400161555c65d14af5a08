@@ -1,0 +1,23 @@
+import java.math.BigDecimal;
+
+public class CreditCard extends Account{
+
+	public CreditCard(BigDecimal startingBalance, BigDecimal startingIntRate) {
+		super(startingBalance, startingIntRate);
+		interestRate = new BigDecimal("0.18");
+	}
+
+	@Override
+	public String getAccountType() {
+		return "Credit Card";
+	}
+
+	@Override
+	public void update() {
+		BigDecimal interest = balance.multiply(interestRate);
+		balance = balance.add(interest);
+
+		// fix the rounding
+		balance = balance.setScale(2, BigDecimal.ROUND_HALF_UP);
+	}
+}

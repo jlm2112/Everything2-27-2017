@@ -1,0 +1,24 @@
+import java.math.BigDecimal;
+import java.util.Scanner;
+
+public class BankAccountApp {
+
+	public void main (String[] args) {
+		
+		BigDecimal startingCheckingBalance = new BigDecimal(12.34);
+		Account myChecking = new CheckingAccount(startingCheckingBalance);
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Choose an option");
+		System.out.println("1. View balance for Checking");
+		System.out.println("2. View balance for Savings");
+
+		int response = input.nextInt();
+		switch (response) {
+		case 1:
+				//do something
+			break;
+		
+		}
+	}
+}

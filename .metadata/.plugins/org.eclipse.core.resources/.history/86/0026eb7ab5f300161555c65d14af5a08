@@ -1,0 +1,23 @@
+import java.math.BigDecimal;
+
+public class CheckingAccount extends Account {
+
+	public CheckingAccount(BigDecimal startingBalance) {
+		super(startingBalance);
+		interestRate = new BigDecimal("0.02");
+	}
+	
+	@Override
+	public String getAccountType() {
+		return "checking";
+		
+	}
+	@Override
+	public void update() {
+		BigDecimal interest = balance.multiply(interestRate);
+		balance = balance.add(interest);
+		
+		//fix the rounding
+		balance = balance.setScale(2,  BigDecimal.ROUND_HALF_UP);
+	}
+}

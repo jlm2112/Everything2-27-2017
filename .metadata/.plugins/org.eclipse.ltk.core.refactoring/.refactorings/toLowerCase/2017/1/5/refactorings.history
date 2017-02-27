@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;toLowerCase.toLowerCase&apos; to &apos;ToLowerCase&apos;&#x0D;&#x0A;- Original project: &apos;toLowerCase&apos;&#x0D;&#x0A;- Original element: &apos;toLowerCase.toLowerCase&apos;&#x0D;&#x0A;- Renamed element: &apos;toLowerCase.ToLowerCase&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;toLowerCase&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;toLowerCase{toLowerCase.java[toLowerCase" matchStrategy="1" name="ToLowerCase" qualified="false" references="true" similarDeclarations="false" stamp="1485877601905" textual="false" version="1.0"/>
+</session>

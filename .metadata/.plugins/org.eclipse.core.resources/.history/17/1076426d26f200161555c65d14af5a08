@@ -1,0 +1,9 @@
+package mixer;
+
+public class Bartender {
+	
+	public void handleMixing(Mixer drink) {
+		drink.mix();
+	}
+
+}

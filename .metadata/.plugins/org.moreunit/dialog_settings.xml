@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="=fizz-buzz/src\/main\/java" key="org.moreunit.wizards.NewClassWizard.packageFragmentRoot.fizz-buzz"/>
+	<item value="=fortune-teller-revisited/src\/main\/java" key="org.moreunit.wizards.NewClassWizard.packageFragmentRoot.fortune-teller-revisited"/>
+	<section name="NewClassWizardPage">
+		<item value="false" key="create_constructor"/>
+		<item value="true" key="create_unimplemented"/>
+	</section>
+</section>

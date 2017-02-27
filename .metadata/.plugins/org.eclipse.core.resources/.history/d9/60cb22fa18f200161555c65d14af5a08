@@ -1,0 +1,7 @@
+
+public class Cooker {
+
+	public void Cook(){
+		System.out.println("I cooked it.");
+	}
+}

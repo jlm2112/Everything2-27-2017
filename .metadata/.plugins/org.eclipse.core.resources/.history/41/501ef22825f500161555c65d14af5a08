@@ -1,0 +1,8 @@
+
+public class RegularMovie {
+
+	public RegularMovie() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

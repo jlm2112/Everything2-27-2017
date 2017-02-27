@@ -1,0 +1,8 @@
+package mixer;
+
+public class Mixer {
+
+	public void Mixer(); {
+		System.out.println("I mixed a drink!);
+	}
+}

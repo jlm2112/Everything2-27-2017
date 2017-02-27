@@ -1,0 +1,10 @@
+
+public class CookerApp {
+
+	public static void main (String[] args) {
+		Cooker mycooker = new Cooker();
+		mycooker.Cook();
+		 Cooker mygrill = new Grill();
+		 mygrill.Cook();
+	}
+}

@@ -1,0 +1,8 @@
+
+public class RentalStatement {
+
+	public RentalStatement() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

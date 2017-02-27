@@ -1,0 +1,9 @@
+import java.math.BigDecimal;
+
+public class CreditCard {
+
+	public CreditCard (BigDecimal startingBalance, BigDecimal startingIntRate) {
+		super(startingBalance, startingIntRate);
+		interestRate = new BigDecimal("0.18");
+	}
+}

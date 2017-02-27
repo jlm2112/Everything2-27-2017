@@ -1,0 +1,15 @@
+import java.math.BigDecimal;
+
+public class CheckingAccount extends Account {
+
+	public CheckingAccount(BigDecimal startingBalance) {
+		super(startingBalance);
+		interestRate = new BigDecimal("0.02");
+	}
+	
+	@Override
+	public String getAccountType() {
+		return "checking";
+		
+	}
+}

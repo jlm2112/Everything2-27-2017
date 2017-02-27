@@ -1,0 +1,7 @@
+
+public class Grill extends Cooker {
+	public void Cook(){
+		System.out.println("I grilled it.");
+
+	}
+}

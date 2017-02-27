@@ -1,0 +1,16 @@
+package restaurant;
+
+import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.Map;
+
+public class MenuApp {
+
+	public static void main(String[] args){
+		
+		Menu newMenu = new Menu();
+ 		newMenu.addItem("Kale", "7.00");
+		newMenu.print();
+		
+	}
+}

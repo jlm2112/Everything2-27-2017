@@ -1,0 +1,5 @@
+1485804670138	Rename resource 'fortune-teller-todos'
+1485804745342	Rename resource 'fortune-teller-todos.md'
+1485808098538	Extract local variable 'fullNametoLowerCase'
+1485874337418	Extract local variable 'fullName'
+1485874367528	Extract local variable 'income'

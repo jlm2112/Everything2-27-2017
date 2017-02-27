@@ -1,0 +1,11 @@
+package mixer;
+
+public class saltRimmedMargarita extends Margarita {
+	@Override
+	public void mix() {
+	System.out.println("I mixed a salt-rimmed Margarita!");
+	}
+	public void removeGarnish() {
+		System.out.println("I removed the salt from the rim!");
+	}
+}

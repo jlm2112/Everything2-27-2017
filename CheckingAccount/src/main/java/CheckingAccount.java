@@ -1,0 +1,19 @@
+public class CheckingAccount extends Account {
+
+	public CheckingAccount(BigDecimal balance) {
+		super(balance);
+		}
+
+	@Override
+	public void update() {
+		if { 
+		
+	}
+
+	@Override
+	public void getAccountType() {
+	
+		
+	}
+
+}

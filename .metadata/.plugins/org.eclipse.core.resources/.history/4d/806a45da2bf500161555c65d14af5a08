@@ -1,0 +1,9 @@
+import java.math.BigDecimal;
+
+public class RentalCalculator {
+
+	public BigDecimal calculateFees(Movie movie, int days) {
+		return movie.calculateFees(days);
+
+	}
+}

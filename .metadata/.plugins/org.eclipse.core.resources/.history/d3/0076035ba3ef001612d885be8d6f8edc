@@ -1,0 +1,12 @@
+package mapsyay;
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapsYay {
+	Map<String, String> studentIds = new HashMap<String, String>(); //key type, value type
+
+	studentIds.put("123456789", "John Smith");
+	String studentName = studentIds.get("123456789");
+	
+	
+}

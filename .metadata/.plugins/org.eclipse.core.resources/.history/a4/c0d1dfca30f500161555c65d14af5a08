@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class RentalStatement {
+
+	private Collection<Rental> myList = new ArrayList<Rental>();
+	
+	public RentalStatement() {
+
+	}
+	
+	public void add(Rental toAdd) {
+		 myList.add(toAdd);
+	}
+	
+	public void print() {
+		System.out.println("Your Rental Statement:");
+		for(Rental a: myList) {
+			System.out.println("" + a.getPriceCode() + a.getTitle() + a.calculateFees() + "\n");
+		}
+	}
+
+}

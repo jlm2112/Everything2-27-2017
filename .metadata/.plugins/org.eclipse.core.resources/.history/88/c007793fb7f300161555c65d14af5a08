@@ -1,0 +1,36 @@
+import java.math.BigDecimal;
+import java.util.Scanner;
+
+public class BankAccountApp {
+
+	public static void main(String[] args) {
+
+		BigDecimal startingCheckingBalance = new BigDecimal("12.34");
+		Account myChecking = new CheckingAccount(startingCheckingBalance);
+
+		System.out.println("Account type is: " + myChecking.getAccountType());
+
+		System.out.println("Balance is " + myChecking.getBalance());
+		myChecking.update();
+		System.out.println("After update, balance is " + myChecking.getBalance());
+
+		BigDecimal amountToDesposit = new BigDecimal("1000.00");
+		myChecking.deposit(amountToDesposit);
+		System.out.println("After deposit, balance is " + myChecking.getBalance());
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("Choose an option");
+		System.out.println("1. View balance for Checking");
+		System.out.println("2. View balance for Savings");
+		System.out.println("3. View balance for Credit Card");
+		  
+		int response = input.nextInt();
+		switch (response) {
+		case 1:
+			System.out.println("Balance is " + myChecking.getBalance());
+			break;
+		case 2:
+			break;
+		}
+	}
+}

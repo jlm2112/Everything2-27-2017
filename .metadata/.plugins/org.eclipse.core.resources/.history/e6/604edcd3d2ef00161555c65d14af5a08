@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class VirtualPetApp {
+
+	public static void main(String[] args) {
+
+		VirtualPet stacy = new VirtualPet();
+		Scanner input = new Scanner(System.in);
+
+		boolean wantsToQuit = false;
+
+		System.out.println("This is Stacy the snake");
+
+		do {
+			System.out.println("Stacy's level of hunger is: " + stacy.getHunger());
+			System.out.println("Stacy's level of thirst is: " + stacy.getThirst());
+
+			if (stacy.isHungry()) {
+				System.out.println("Stacy: \"Got any deliciousss mice?\"");
+			}
+			if (stacy.isThirsty()) {
+				System.out.println("Stacy: \"I need some water.\"");
+			}
+			System.out.println("What would you like to do?");
+			System.out.println("1. Feed Stacy a mouse");
+			System.out.println("2. Give Stacy some water");
+			System.out.println("3. Do Nothing");
+
+			int intResponse = input.nextInt();
+			String stringResponse;
+			stacy.tick();
+
+			switch (intResponse) {
+			case 1: {
+				stacy.giveAMouse();
+				stacy.tick();
+
+			}
+			case 2: {
+				stacy.giveSomeWater();
+				stacy.tick();
+
+			}
+			case 3: {
+				stacy.tick();
+			}
+			}
+
+			if (stacy.hasStarved() || stacy.hasDehydrated()) {
+				System.out.println("Stacy has died. Do you want to try again (yes/no)?");
+				stringResponse = input.next();
+				stringResponse = stringResponse.toLowerCase();
+				wantsToQuit = !stringResponse.equals("yes");
+			}
+		} while (!wantsToQuit);
+
+		System.out.println("Goodbye");
+		input.close();
+	}
+
+}

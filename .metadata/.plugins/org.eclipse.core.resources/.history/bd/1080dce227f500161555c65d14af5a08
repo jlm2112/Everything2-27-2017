@@ -1,0 +1,16 @@
+
+public class VideoStoreApp {
+
+	public static void main(String[] args) {
+
+		RentalCalculator calculator = new RentalCalculator();
+			Movie regular = new RegularMovie("WCCI");
+			Movie childrens = new ChildrensMovie("Up");
+			Movie newRelease = new NewRelease("Dr Strange");
+		
+		System.out.println("amount due for regular movie = " + calculator.calculate(regular,5));
+
+		
+	}
+
+}

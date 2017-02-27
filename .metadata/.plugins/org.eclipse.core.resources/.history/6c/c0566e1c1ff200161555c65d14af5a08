@@ -1,0 +1,9 @@
+package mixer;
+
+public class Margarita extends Mixer {
+// this is an override 
+	public void mix() {
+		System.out.println("I mixed a margarita");
+	}
+
+}

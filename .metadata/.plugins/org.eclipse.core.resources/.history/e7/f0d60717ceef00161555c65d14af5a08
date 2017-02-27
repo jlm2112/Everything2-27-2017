@@ -1,0 +1,49 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class VirtualPet {
+	private String name;
+	private int hunger;
+	private Random generator = new Random();
+	Scanner scanner = new Scanner(System.in);
+
+	public VirtualPet() {
+		name = "stacy";
+	}
+
+	public void tick() {
+
+		hunger += (5 + generateRandom());
+
+	}
+
+	public int generateRandom() {
+		return generator.nextInt(6); // random int 0-5
+	}
+
+	@Override
+	public String toString() {
+		return name + ", who has a hunger level of " + hunger;
+	}
+
+	// hunger
+	public boolean isHungry() {
+		boolean hungry = (hunger >= 50);
+		return hungry;
+	}
+
+	public int getHunger() {
+		return hunger;
+	}
+
+	public void giveAMouse() {
+		hunger -= 30;
+		tick();
+	}
+
+	public boolean hasStarved() {
+		boolean starved = (hunger >= 100);
+				return starved;
+	}
+
+}

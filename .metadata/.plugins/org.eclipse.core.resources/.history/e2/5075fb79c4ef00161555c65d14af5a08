@@ -1,0 +1,22 @@
+package restaurant;
+
+import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Menu {
+	
+	
+public void addItem(String name, String price){
+	newMenu.put("name", new BigDecimal("price"));
+
+}
+public void removeItem(String name){
+	newMenu.remove("name");
+
+}
+}
+public void print(){
+	System.out.println(newMenu.entrySet());
+
+}

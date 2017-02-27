@@ -1,0 +1,74 @@
+import java.math.BigDecimal;
+import java.util.Scanner;
+
+public class BankAccountApp {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int response = 0;
+
+		do {
+
+			BigDecimal startingCheckingBalance = new BigDecimal("12.34");
+			BigDecimal startingSavingsBalance = new BigDecimal("400");
+
+			BigDecimal startingInterestRate = new BigDecimal("0.00");
+			
+			Account myChecking = new CheckingAccount(startingCheckingBalance, startingInterestRate);
+			Account mySavings = new SavingsAccount(startingSavingsBalance, startingInterestRate);
+
+			System.out.println("Account type is: " + myChecking.getAccountType());
+
+			System.out.println("Balance is " + myChecking.getBalance());
+			updateTheAccount(myChecking);
+			System.out.println("After update, balance is " + myChecking.getBalance());
+
+			BigDecimal amountToDesposit = new BigDecimal("1000.00");
+			BigDecimal amountToWithdraw = new BigDecimal("500.00");
+
+			myChecking.deposit(amountToDesposit);
+			System.out.println("After deposit, balance is " + myChecking.getBalance());
+			myChecking.withdraw(amountToWithdraw);
+			System.out.println("After withdrawal, balance is " + myChecking.getBalance());
+
+ 			System.out.println("Choose an option"); 
+			System.out.println("1. View balance for Checking");
+			System.out.println("2. View balance for Savings");
+			System.out.println("3. View balance for Credit Card");
+			System.out.println("4. Deposit funds to Checking");
+			System.out.println("5. Deposit funds to Savings");
+			System.out.println("6. Withdraw funds from Checking");
+			System.out.println("7. Withdraw funds from Savings");
+			System.out.println("8. Exit");
+			
+			response = input.nextInt();
+			
+ 			switch (response) {
+			case 1:
+				System.out.println("Checking Balance is " + myChecking.getBalance());
+				break;
+			case 2:
+				System.out.println("Savings Balance is " + mySavings.getBalance());
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+			case 6:
+				break;
+			case 7:
+				break;
+			case 8:
+				break;
+
+			}
+		} while (response != 8);
+		System.out.println("Goodbye");
+	}
+
+	private static void updateTheAccount(Account acct) {
+		acct.update();
+	}
+}

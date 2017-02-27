@@ -1,0 +1,6 @@
+1485282574162	Extract method 'singStanza'
+1485282799957	Extract local variable 'bottlesLyric'
+1485287301119	Extract local variable 'bottlesDescriptor'
+1485287328465	Rename local variable 'bottlesDescriptor'
+1485287399935	Rename local variable 'foo'
+1485288064486	Extract local variable 'onlyOneBottle'

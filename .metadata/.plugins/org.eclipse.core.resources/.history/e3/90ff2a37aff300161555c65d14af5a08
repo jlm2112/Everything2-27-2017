@@ -1,0 +1,13 @@
+import java.math.BigDecimal;
+
+public class CheckingAccount {
+
+	public CheckingAccount(BigDecimal startingBalance) {
+		super(startingBalance);
+	}
+	
+	@Override
+	public String getAccountType() {
+		
+	}
+}

@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class VirtualPetApp {
+
+	public static void main(String[] args) {
+
+		VirtualPet stacy = new VirtualPet();
+		Scanner input = new Scanner(System.in);
+
+		boolean wantsToContinue;
+
+		do {
+			System.out.println("This is Stacy the snake");
+			System.out.println("Stacy's level of hunger is: " + stacy.getHunger());
+
+			if (stacy.isHungry()) {
+				System.out.println("Got any deliciousss mice?");
+			}
+			System.out.println("What would you like to do?");
+			System.out.println("1. Feed stacy a mouse");
+			int intResponse = input.nextInt();
+			String stringResponse;
+			stacy.tick();
+			if (intResponse == 1) {
+				stacy.giveAMouse();
+			}
+
+			System.out.println("Stacy has died. Do you want to try again?");
+			stringResponse = input.next();
+			stringResponse = stringResponse.toLowerCase();
+			exit = stringResponse.equals("yes");
+
+		} while (!wantsToQuit);
+
+		System.out.println("Goodbye");
+		input.close();
+	}
+
+}

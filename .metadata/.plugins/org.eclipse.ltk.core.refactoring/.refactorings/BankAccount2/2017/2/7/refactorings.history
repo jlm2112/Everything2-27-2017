@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;interest&apos; from expression &apos;balance.multiply(interestRate)&apos;&#x0D;&#x0A;- Original project: &apos;BankAccount2&apos;&#x0D;&#x0A;- Variable name: &apos;interest&apos;&#x0D;&#x0A;- Destination method: &apos;Account.update()&apos;&#x0D;&#x0A;- Variable expression: &apos;balance.multiply(interestRate)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;interest&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java&lt;{Account.java" name="interest" replace="true" selection="386 30" stamp="1487185337845" version="1.0"/>
+</session>

@@ -1,0 +1,20 @@
+package restaurant;
+
+import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Restaurant {
+
+	public static void main (String[] args) {
+		Map<String, BigDecimal> menu = new HashMap<String,BigDecimal>();
+		BigDecimal price = new BigDecimal("8.97");
+		menu.put("Spaghetti", price);
+		price = new BigDecimal("10.98");
+		menu.put("Lasagna", price);
+		menu.put("Pizza", new BigDecimal("15.50")); //method call in place of variable
+		
+		price = menu.get("Spaghetti");
+		System.out.println("Spaghetti price = " + price);
+	}
+}

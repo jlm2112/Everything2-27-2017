@@ -1,0 +1,28 @@
+import java.math.BigDecimal;
+import java.util.Scanner;
+
+public class BankAccountApp extends Account {
+
+	public BankAccountApp(BigDecimal balance) {
+		super(balance);
+		
+	}
+
+	public static void main(String[] args) {
+		boolean exit = false;
+		Scanner input = new Scanner(System.in);
+		do {
+			System.out.println("Would you like to deposit or withdrawl? for Deposit press 1, for withdrawl press 2");
+			int response = input.nextInt();
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void getAccountType() {
+		// TODO Auto-generated method stub
+		
+	}
